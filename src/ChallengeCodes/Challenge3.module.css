@@ -1,0 +1,169 @@
+.notReady{
+    position: absolute;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 288px;
+    height: 2rem;
+    bottom: -270px;
+    background-color: red;
+    transform: rotate(35deg);
+    z-index: 12;
+}
+.frame{
+    width: 100%;
+    height:100%;
+    background-color: #272C34;
+    .center{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        .circle{
+            width: 65%;
+            height: 65%;
+            border-radius: 50%; 
+            overflow: hidden;.frame {
+                width: 100%;
+                height: 100%;
+                background-color: #272C34;
+            }
+            
+            .center {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .circle {
+                width: 65%;
+                height: 65%;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            
+            .sky {
+                width: 100%;
+                height: 100%;
+                background-color: #7DDFFC;
+                position: relative;
+                z-index: 1;
+                animation: skyAnimation 5s infinite linear;
+            }
+            
+            .sunContainer {
+                width: 100%;
+                height: 100%;
+                animation: sunContainer 5s linear infinite forwards;
+            }
+            
+            .sun {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                left: -5px;
+                bottom: 45px;
+                border: 1px solid white;
+                background-color: yellow;
+                position: absolute;
+                z-index: 2;
+            }
+            
+            .sand {
+                width: 100%;
+                height: 35%;
+                background-color: #F0DE75;
+                position: absolute;
+                bottom: 0;
+                z-index: 2;
+            }
+            
+            
+            
+          
+            
+            .sky{
+                width: 100%;
+                height: 100%;
+                background-color: #7DDFFC;
+                position: relative;
+                z-index: 1;
+                .sunContainer{
+                    width: 9rem;
+                    height: 12rem;
+                   
+                    border-radius: 50%;
+                    animation:sunContainer 5s linear infinite forwards;
+                .sun{
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                    left: -15px;
+                    bottom: 50px;
+                    border:1px solid white;
+                    background-color: yellow;
+                    position: absolute;
+                    z-index: 2;
+                }
+            }
+                .sand{
+                    width: 100%;
+                    height: 35%;
+                    background-color: #F0DE75;
+                    position: absolute;
+                    bottom: 0;
+                    z-index: 2;
+                }
+               
+            }
+        }
+    }
+}
+.pyramidContainer{
+    position: absolute;
+    bottom: 35%;
+    left: 0;
+   
+}
+.pyramid {
+    
+    height: 0;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid #fffefb;
+    z-index: 5;
+   
+  
+}
+@keyframes skyAnimation {
+    0%{
+        background-color: #7DDFFC;
+    }
+    75%{
+        background-color: #9de8ff;
+    }
+    100%{
+        background-color: #00c1be;
+    }
+}
+@keyframes pyramidAnimation {
+    from{
+        transform: skew(0deg);
+    }
+    to{
+        transform: skew(180deg);
+    }
+}
+@keyframes sunContainer {
+    from{
+        transform: rotate(0deg) translateX(25px);
+    }
+    to{
+        transform: rotate(230deg) translateX(-25px);
+    }
+}

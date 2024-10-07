@@ -1,0 +1,78 @@
+.container{
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    height:100%;
+    background-color: while;
+    background-image: linear-gradient(to top right, #433BA0,#4EC3C9);
+    border-radius: .5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.top{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+       .oneOne{
+        box-shadow: 1px 1px 12px 1px rgb(49, 56, 58);
+        width: .8rem;
+        height: 1.7rem;
+        background-color: white;
+        z-index: 2;
+        position: absolute;
+        
+        transform:translateX(-.7rem) rotate(45deg) ;
+        
+    }
+       .oneTwo{
+        box-shadow: .3px .3px 6px .5px rgb(58, 58, 58);
+       width: .9rem;
+       height: 3.6rem;
+       background-color: white;
+       z-index: 3;
+       }
+       .twoOne{
+        width: 3rem;
+        height: 3rem;
+        padding:1rem;
+        transform: translate(-.3rem);
+        border: 15px solid white;
+        border-radius: 50%;
+        box-shadow: .3px .3px 6px .5px rgb(58, 58, 58);
+        z-index: 2;
+        
+        }
+        
+       .twoTwo{
+        width: 3rem;
+        height: 3rem;
+        padding:1rem;
+        transform: translate(-.9rem);
+        border: 15px solid white;
+        border-radius: 50%;
+        box-shadow: .3px .3px 6px .5px rgb(58, 58, 58);
+        z-index: 1;
+        
+        }
+        
+}
+.medium{
+    font-size: 4rem;
+    letter-spacing: .65rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    line-height: 3.5rem;
+    
+}
+.bottom{
+    margin: 0;
+    padding: 0;
+    letter-spacing: .19rem;
+    font-size: 1.2rem;
+}
+
